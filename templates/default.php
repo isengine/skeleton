@@ -9,6 +9,13 @@ use is\Helpers\Strings;
 $instance = $object -> get('instance');
 $sets = &$object -> settings;
 
+//echo print_r($object, 1);
+
+//$object -> eget('container') -> addClass('new');
+//$object -> eget('container') -> open(true);
+//$object -> eget('container') -> close(true);
+//$object -> eget('container') -> print();
+
 ?>
 
 <div class="<?= $instance; ?>">
@@ -32,6 +39,6 @@ $sets = &$object -> settings;
 		}
 	?>
 	
-	<?php $object -> elements('element'); ?>
+	<?php $object -> blocks('block'); ?>
 	
 </div>
