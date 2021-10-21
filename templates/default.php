@@ -6,15 +6,15 @@ use is\Helpers\System;
 use is\Helpers\Objects;
 use is\Helpers\Strings;
 
-$instance = $object -> get('instance');
-$sets = &$object -> settings;
+$instance = $this -> get('instance');
+$sets = &$this -> settings;
 
-//echo print_r($object, 1);
+//echo print_r($this, 1);
 
-//$object -> eget('container') -> addClass('new');
-//$object -> eget('container') -> open(true);
-//$object -> eget('container') -> close(true);
-//$object -> eget('container') -> print();
+//$this -> eget('container') -> addClass('new');
+//$this -> eget('container') -> open(true);
+//$this -> eget('container') -> close(true);
+//$this -> eget('container') -> print();
 
 ?>
 
@@ -39,6 +39,6 @@ $sets = &$object -> settings;
 		}
 	?>
 	
-	<?php $object -> blocks('block'); ?>
+	<?php $this -> block('block'); ?>
 	
 </div>
